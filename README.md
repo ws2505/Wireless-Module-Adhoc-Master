@@ -1,5 +1,5 @@
 # Wireless-Module-Adhoc-Master
-This is a project used for communication for mobiles without network 
+This is an Android project used for mobile communication without network 
 
 
 # Introduction
