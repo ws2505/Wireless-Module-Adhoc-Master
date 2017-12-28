@@ -6,7 +6,7 @@ This is a project used for communication for mobiles without network
 This is an Android Application used to solve the problem of communication between mobiles 
 without network.
 
-#System Architecture 
+# System Architecture
 1. Wireless Data Transmission Module (WDTM)
 Wireless data transmission modules are connected to the mobiles through bluetooth. WDTM are served 
 to transmit and receive the data
@@ -18,7 +18,7 @@ Bluetooth modules are used to connect the WDTM
 The Android Application has the function of login, transmit of text, image, get current location, share
 location information with group members.
 
-#Software Design
+# Software Design
 1. Activities
 Activities include login, logout, send text, image and etc...
 
@@ -31,7 +31,7 @@ Call Baidu Map Api to get the real-time locaiton
 4. Data Processing
 Encode text, image at the transmitting end and decode them at the receiving end.
 
-#Usage
+# Usage
 Clone the code, import to the Android Studio and build the gradle.
 
 
