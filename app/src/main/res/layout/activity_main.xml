@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/com.example.apple.wireless_module_ad_hoc"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/launch_02"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1"
+    tools:context=".Actiivties.LoginActivity">
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/email_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <!--<android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content">  -->
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_email"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <!--</android.support.design.widget.TextInputLayout> -->
+
+        <!--<android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"> -->
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID(Your mobile phone number)"
+            android:imeActionId="@+id/login"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionUnspecified"
+            android:inputType="number"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <!--</android.support.design.widget.TextInputLayout>-->
+
+        <Button
+            android:id="@+id/email_sign_in_button"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/action_sign_in"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="If the information is right, you can skip login operation."
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="13sp" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1.08" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="289dp"
+        android:layout_alignBottom="@+id/bmapView"
+        android:layout_alignEnd="@+id/bmapView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignRight="@+id/bmapView"
+        android:layout_gravity="bottom"
+        android:gravity="center|center_vertical|center_horizontal|bottom"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_alignBottom="@+id/linearLayout"
+            android:layout_alignEnd="@+id/editText2"
+            android:layout_alignRight="@+id/editText2"
+            android:layout_weight="0.31"
+            android:background="@mipmap/launch_03" />
+
+        <Button
+            android:id="@+id/chat"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_alignBottom="@+id/linearLayout"
+            android:layout_alignEnd="@+id/editText2"
+            android:layout_alignRight="@+id/editText2"
+            android:layout_weight="0.31"
+            android:background="@mipmap/launch_04" />
+
+        <Button
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_alignBottom="@+id/linearLayout"
+            android:layout_alignEnd="@+id/editText2"
+            android:layout_alignRight="@+id/editText2"
+            android:layout_weight="0.31"
+            android:background="@mipmap/launch_07" />
+    </LinearLayout>
+
+</LinearLayout>

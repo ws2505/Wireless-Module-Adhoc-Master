@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:weightSum="1">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:id="@+id/Text0"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+			android:layout_alignParentTop="true"
+			android:text="CHAT LOG (Click refresh to show new message)" />
+	</RelativeLayout>
+
+	<EditText
+		android:id="@+id/to_user"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentTop="true"
+		android:ems="10"
+		android:hint="To:(Mobile phone number)"
+		android:inputType="number" />
+
+	<ImageView
+		android:id="@+id/image"
+		android:layout_width="177dp"
+		android:layout_height="103dp"
+		android:layout_gravity="center_horizontal"
+		android:visibility="visible"
+		android:layout_weight="0.32" />
+
+	<ListView
+		android:id="@+id/dialogue_list"
+		android:layout_width="match_parent"
+		android:layout_height="142dp"
+		android:layout_weight="0.65" />
+
+	<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+		<EditText
+			android:id="@+id/Edit0"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_gravity="bottom">
+		</EditText>
+
+
+		<Button
+			android:id="@+id/send"
+			android:layout_width="46dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.10"
+			android:text="send">
+
+		</Button>
+    </LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:weightSum="1">
+
+		<Button
+			android:id="@+id/img"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="Image" />
+
+		<Button
+			android:id="@+id/rescue_info"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="rescue"></Button>
+
+		<Button
+			android:id="@+id/clean"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="clean">
+
+		</Button>
+
+		<Button
+			android:id="@+id/refresh_dialogue"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="refresh"></Button>
+	</LinearLayout>
+</LinearLayout>

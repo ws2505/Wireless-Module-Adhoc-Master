@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+	</RelativeLayout>
+
+	<TextView
+		android:id="@+id/Text0"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="RESCUE INFORMATION" />
+
+	<TextView
+		android:id="@+id/textView2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Click refresh to get new message" />
+
+	<ListView
+		android:id="@+id/rescue_list"
+		android:layout_width="match_parent"
+		android:layout_height="394dp" />
+
+	<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+		<EditText
+			android:id="@+id/Edit0_resuce"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom"
+			android:layout_weight="1"></EditText>
+
+
+		<Button
+			android:id="@+id/send_rescue"
+			android:layout_width="46dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.10"
+			android:text="send">
+
+		</Button>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+		<Button
+			android:id="@+id/rescue_info_rescue"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="rescue"></Button>
+
+		<Button
+			android:id="@+id/clean_rescue"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="clean">
+
+		</Button>
+
+		<Button
+			android:id="@+id/refresh_dialogue_rescue"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="refresh"></Button>
+    </LinearLayout>
+</LinearLayout>
